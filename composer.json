@@ -1,0 +1,7 @@
+{
+    "name": "concrete5/migration_tool",
+    "type": "concrete5-package",
+    "require": {
+        "composer/installers": "^1.0.7"
+    }
+}

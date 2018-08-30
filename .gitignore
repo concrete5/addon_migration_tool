@@ -7,3 +7,4 @@ __MACOSX
 .*swp
 .*swo
 /web
+/vendor
