@@ -76,6 +76,11 @@ class ObjectCollection
         return $this->items->count() > 0;
     }
 
+    public function numRecords()
+    {
+        return $this->items->count();
+    }
+
     public function getItemTypeObject()
     {
         $exporters = \Core::make('migration/manager/exporters');

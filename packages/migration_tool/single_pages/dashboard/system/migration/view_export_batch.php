@@ -60,7 +60,10 @@ $dh = Core::make('helper/date');
         $formatter = $itemType->getResultsFormatter($batch);
         ?>
 
-                    <h3><?=$itemType->getPluralDisplayName()?></h3>
+                    <h3>
+                        <?=$itemType->getPluralDisplayName()?>
+                        <small class="pull-right">[<?=t2('%d Item', '%d Items', $collection->numRecords())?>]</small>
+                    </h3>
                     <?php echo $formatter->displayBatchResults()?>
                 <?php 
     }
